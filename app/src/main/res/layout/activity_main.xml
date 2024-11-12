@@ -63,13 +63,13 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/et_email"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="35dp"
                 android:ems="10"
+                android:hint="Enter Your Email"
                 android:inputType="textPersonName"
-                android:text="Enter your Email"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -80,26 +80,26 @@
                 android:layout_height="24dp"
                 android:layout_marginStart="258dp"
                 android:layout_marginTop="11dp"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+                app:layout_constraintStart_toStartOf="@+id/et_email"
+                app:layout_constraintTop_toTopOf="@+id/et_email"
                 app:srcCompat="@drawable/mail" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/et_password"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="30dp"
                 android:ems="10"
+                android:hint="Password"
                 android:inputType="textPassword"
-                android:text="123456789"
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/et_email"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/forget_pw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
@@ -114,7 +114,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.414"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/et_password"
                 app:layout_constraintVertical_bias="0.111"
                 app:lineHeight="10.35dp" />
 
@@ -133,11 +133,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/et_password"
                 app:layout_constraintVertical_bias="0.088" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/sign_in_bt"
                 android:layout_width="300dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="300dp"
@@ -157,7 +157,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/sign_in_bt"
                 app:layout_constraintVertical_bias="0.292">
 
                 <TextView
@@ -169,7 +169,7 @@
                     android:textColor="#252525" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/register_now"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -187,8 +187,8 @@
                 android:layout_marginStart="258dp"
                 android:layout_marginTop="11dp"
                 android:background="#00000000"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+                app:layout_constraintStart_toStartOf="@+id/et_password"
+                app:layout_constraintTop_toTopOf="@+id/et_password"
                 app:srcCompat="@drawable/lock" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
